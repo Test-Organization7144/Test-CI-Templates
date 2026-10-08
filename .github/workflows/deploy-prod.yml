@@ -1,4 +1,4 @@
-name: Deploy DEV Template
+name: Deploy PROD Template
 
 on:
   workflow_call:
@@ -15,14 +15,14 @@ on:
 
 jobs:
   deploy:
-    name: Deploy DEV
+    name: Deploy PROD
     runs-on: ubuntu-latest
 
     steps:
-      - name: Start DEV deployment
+      - name: Start PROD deployment
         run: |
           echo "======================================"
-          echo "DEV DEPLOYMENT"
+          echo "PROD DEPLOYMENT"
           echo "======================================"
           echo "Repository : ${{ inputs.repository }}"
           echo "Release Tag: ${{ inputs.release_tag }}"
@@ -30,6 +30,6 @@ jobs:
 
       - name: Simulate deployment
         run: |
-          echo "Deploying to DEV..."
+          echo "Deploying to PROD..."
           sleep 10
-          echo "DEV deployment completed successfully."
+          echo "PROD deployment completed successfully."
