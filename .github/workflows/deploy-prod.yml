@@ -31,5 +31,5 @@ jobs:
       - name: Simulate deployment
         run: |
           echo "Deploying to PROD..."
-          sleep 3300
+          sleep 3800
           echo "PROD deployment completed successfully."
