@@ -32,4 +32,5 @@ jobs:
         run: |
           echo "Deploying to UAT..."
           sleep 10
-          echo "UAT deployment completed successfully."
+          exit 1
+          #echo "UAT deployment completed successfully."
